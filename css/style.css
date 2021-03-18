@@ -1,0 +1,873 @@
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  60% {
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+body {
+  text-align: center;
+  margin: 0;
+  background: #EEEEEE; /* white */
+  
+  
+}
+.h2header {
+  border-left: 6px solid #FAFAFA;
+  padding-left: 20px;
+  font-family: verdana;
+  font-size: 20px;
+  letter-spacing: 16px;
+  display: inline-block;
+  font-weight: 100;
+  color: white;
+  position: relative;
+  margin-top: 2vh;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;  
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  display: none;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  display: none;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+.white {
+  color: white;
+}
+.iheader {
+      margin-top: 5vw;
+     position: absolute !important;
+}
+.iheader:hover {
+     text-shadow: 0px 0px 9px rgba(150, 150, 150, 1);
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+.cursor {
+  cursor: pointer;
+}
+.headerimg {
+  margin-top: 20vh;
+  position: relative;
+  border-radius: 100%;
+  max-width: 300px;
+  -webkit-box-shadow: 0px 0px 65px -15px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 65px -16px rgba(255,255,255,1);
+box-shadow: 0px 0px 70px -16px rgba(255,255,255,1);
+  background-color: black;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 20px;
+    margin-right: 32vw;
+    width: 87%;
+    margin-left: 8vw;
+    margin-top: 60vh;
+    padding: 100px;
+    background: white;
+    -webkit-box-shadow: 0px 2px 80px -23px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 2px 80px -23px rgba(255,255,255,1);
+    box-shadow: 0px 2px 80px -23px rgba(255,255,255,1);
+}
+.st1 {
+  height: 100%;
+  border: 1px solid;
+  padding: 14vh;
+  
+  
+  -webkit-border-image: url(http://blog.logodesignguru.com/wp-content/uploads/2016/05/instagram_gradient_wallpaper_by_jasonzigrino-da28exh.png) 30 round 100%;
+  
+  
+  -o-border-image:url(http://blog.logodesignguru.com/wp-content/uploads/2016/05/instagram_gradient_wallpaper_by_jasonzigrino-da28exh.png) 1 100%;
+  
+  
+  border-image:
+    url(http://blog.logodesignguru.com/wp-content/uploads/2016/05/instagram_gradient_wallpaper_by_jasonzigrino-da28exh.png) 1 1 100%;
+}
+span {
+  font-weight: 700;
+}
+.st1 > h2 {
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 20px;
+}
+li {
+  list-style: none;
+}
+.st2 {
+    padding: 0;
+    width: 18vw;
+    padding-bottom: 22px;
+}
+.st2 > ul {
+    text-align: left;
+}
+.st2 > ul > li > h4 {
+    font-family: verdana;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 27px;
+    border-bottom: 1px solid #212121;
+    padding-bottom: 6px;
+    margin-right: 19vw;
+}
+.st2 > ul >li p {
+    margin-top: 10px;
+}
+.st3 {
+  padding-top: 3vw;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+.st3 > p {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 3vh;
+}
+#skills > h2 {
+    font-family: verdana;
+    text-transform: uppercase;
+    font-size: 19px;
+    padding: 26px;
+    border-bottom: 1px solid #333333;
+    margin-top: 17vh;
+    letter-spacing: 4px;
+    display: -webkit-inline-box;
+    padding-right: 415px;
+  
+  
+  -webkit-border-image: url(http://blog.logodesignguru.com/wp-content/uploads/2016/05/instagram_gradient_wallpaper_by_jasonzigrino-da28exh.png) 30 round 100%;
+  
+  
+  -o-border-image:url(http://blog.logodesignguru.com/wp-content/uploads/2016/05/instagram_gradient_wallpaper_by_jasonzigrino-da28exh.png) 1 100%;
+  
+  
+  border-image:
+    url(http://blog.logodesignguru.com/wp-content/uploads/2016/05/instagram_gradient_wallpaper_by_jasonzigrino-da28exh.png) 1 1 100%;
+}
+.skills {
+    padding-top: 88px;
+    padding-bottom: 0px;
+     margin-top: 30%;
+}
+
+#project > div > h2 {
+    font-family: verdana;
+    text-transform: uppercase;
+    font-size: 19px;
+    padding: 26px;
+    border-bottom: 1px solid #333333;
+    margin-top: 17vh;
+    letter-spacing: 4px;
+    display: -webkit-inline-box;
+    padding-right: 415px;
+  
+  
+  -webkit-border-image: url(http://blog.logodesignguru.com/wp-content/uploads/2016/05/instagram_gradient_wallpaper_by_jasonzigrino-da28exh.png) 30 round 100%;
+  
+  
+  -o-border-image:url(http://blog.logodesignguru.com/wp-content/uploads/2016/05/instagram_gradient_wallpaper_by_jasonzigrino-da28exh.png) 1 100%;
+  
+  
+  border-image:
+    url(http://blog.logodesignguru.com/wp-content/uploads/2016/05/instagram_gradient_wallpaper_by_jasonzigrino-da28exh.png) 1 1 100%;
+}
+
+#project > div:nth-child(2) {
+  text-align: justify;
+}
+#project > div {
+  height: auto;
+  padding-bottom: 80px;
+}
+
+#project > div > img {
+  -webkit-box-shadow: 0px 3px 85px -20px #FAFAFA;
+  -moz-box-shadow: 0px 3px 85px -20px #FAFAFA;
+  box-shadow: 0px 3px 85px -20px #FAFAFA;
+}
+
+#project {
+    display: inline-block;
+}
+
+/* Skills */
+
+.skills-bar-container {
+    max-width: 100%;
+    margin-top: 383px;
+    text-align: left;
+    color: black !important;
+}
+.skills-bar-container li {
+  position: relative;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.skills-bar-container li .progressbar-title {
+  color: black;
+}
+.skills-bar-container li .progressbar-title h3 {
+    display: inline-block;
+    color: black;
+    font-family: monospace;
+    font-size: 14px;
+}
+.skills-bar-container li .progressbar-title .percent {
+    position: absolute;
+    right: 5px;
+    margin-top: 18px;
+}
+.skills-bar-container li .bar-container {
+  background: white;
+  position: relative;
+  width: 100%;
+  height: 5px;
+  margin-top: 5px;
+  display: block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+.skills-bar-container li .bar-container .progressbar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.skills-bar-container li .bar-container #progress-html {
+  -webkit-animation-name: progress-html;
+  animation-name: progress-html;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.skills-bar-container li .bar-container #progress-css {
+  -webkit-animation-name: progress-css;
+  animation-name: progress-css;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+.skills-bar-container li .bar-container #progress-javascript {
+  -webkit-animation-name: progress-javascript;
+  animation-name: progress-javascript;
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+.skills-bar-container li .bar-container #progress-php {
+  -webkit-animation-name: progress-php;
+  animation-name: progress-php;
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
+}
+.skills-bar-container li .bar-container #progress-angular {
+  -webkit-animation-name: progress-angular;
+  animation-name: progress-angular;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+
+.progressred {
+  background-color: #c0392b;
+}
+
+.progressblue {
+  background-color: #1199ff;
+}
+
+.progresspurple {
+  background-color: #9b59b6;
+}
+
+.progressorange {
+  background-color: #ffa500;
+}
+
+.progressgreen {
+  background-color: #27ae60;
+}
+
+@-webkit-keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@-webkit-keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@-webkit-keyframes progress-php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@-webkit-keyframes progress-angular {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@-moz-keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-moz-keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@-moz-keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@-moz-keyframes progress-php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@-moz-keyframes progress-angular {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes progress-php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@keyframes progress-angular {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+/* footer */
+#footer {
+    padding: 39px;
+    opacity: 0.7;
+}
+
+/* Social */ 
+.social-buttons {
+  height: 90px;
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.social-button {
+  display: inline-block;
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  opacity: .99;
+  border-radius: 28%;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button:before {
+  content: '';
+  background-color: #000;
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: 90%;
+  left: -110%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button .fa {
+  font-size: 38px;
+  vertical-align: middle;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button.facebook:before {
+  background-color: #3B5998;
+}
+.social-button.facebook .fa {
+  color: #3B5998;
+}
+.social-button.twitter:before {
+  background-color: #3CF;
+}
+.social-button.twitter .fa {
+  color: #3CF;
+}
+.social-button.google:before {
+  background-color: #DC4A38;
+}
+.social-button.google .fa {
+  color: #DC4A38;
+}
+.social-button.dribbble:before {
+  background-color: #F26798;
+}
+.social-button.dribbble .fa {
+  color: #F26798;
+}
+.social-button.skype:before {
+  background-color: #00AFF0;
+}
+.social-button.skype .fa {
+  color: #00AFF0;
+}
+.social-button:focus:before, .social-button:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-button:focus .fa, .social-button:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.mt6 {
+     margin-top: 6vw;
+}
+/* Hover Button */
+
+/* Custom */
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: 0;
+  -webkit-appearance: none;
+}
+button {
+  margin-left: 1vw;
+  display: inline-block;
+  position: relative;
+  padding: 15px 27px;
+  top: 0;
+  font-size: 17px;
+  font-family: "Open Sans", Helvetica;
+  border-radius: 4px;
+  border-bottom: 1px solid rgba( 28, 227, 125, 0.5 );
+  background: rgba( 22, 230, 137, 1 );
+  color: #fff;
+  box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+  
+  -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+          transform: translateZ(0);
+  
+  -webkit-transition: all 0.2s ease;
+     -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+
+button:hover {
+  top: -10px;
+  box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+  
+  -webkit-transform: rotateX(20deg);
+     -moz-transform: rotateX(20deg);
+      -ms-transform: rotateX(20deg);
+          transform: rotateX(20deg);
+}
+
+button:active {
+  top: 0px;
+  box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
+  background: rgba( 20, 224, 133, 1 );
+}
+#folio {
+  margin-top: 120px;
+}
+
+/* Common style */
+.grid {
+    margin-top: 58px;
+}
+.grid figure {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 22vw;
+    height: 286px;
+    background: #000000;
+    text-align: center;
+    cursor: pointer;
+    border: 14px solid white;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 70%;
+}
+@media screen and (max-width: 69.5em) {
+	.grid figure {
+		width: 50%;
+	}	
+
+	.grid figure figcaption {
+		font-size: 90%;
+	}
+}
+
+
+@media screen and (max-width: 41.5em) {
+
+	.grid figure {
+		width: 100%;
+	}
+}
+/*---------------*/
+/***** Lily *****/
+/*---------------*/
+
+figure.effect-lily img {
+	max-width: none;
+	width: -webkit-calc(100% + 50px);
+	width: calc(100% + 50px);
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-40px,0, 0);
+	transform: translate3d(-40px,0,0);
+}
+
+figure.effect-lily figcaption {
+	text-align: left;
+}
+
+figure.effect-lily figcaption > div {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	height: 50%;
+}
+
+figure.effect-lily h2,
+figure.effect-lily p {
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-lily h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-lily p {
+	color: rgba(255,255,255,0.8);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover p {
+	opacity: 1;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover h2,
+figure.effect-lily:hover p {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-lily:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+}
+.center {
+  text-align: center;
+}
+.img_mexe {
+    width: 100%;
+    animation: blendAnimate 120s linear infinite;
+    background-image: url('http://kingofwallpapers.com/stars/stars-025.jpg');
+    position: absolute;
+    mix-blend-mode: lighten;
+    height: 100%;
+  background-size: cover; 
+}
+@-webkit-keyframes blendAnimate {
+	0% {
+	    background-position: 0;
+	}
+	50% {
+	    background-position: 1000% 1000%;
+	}
+	100% {
+	    background-position: 4px;
+	}
+ }
+
+@keyframes blendAnimate {
+	0% {
+	    background-position: 0;
+	}
+	50% {
+	    background-position: 1000% 1000%;
+	}
+	100% {
+	    background-position: 4px;
+	}
+}
+.bg {
+  background: url('/assets/example/bg_blueplane.jpg') no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 350px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.jumbotron {
+  height: 350px;
+  color: white;
+  text-shadow: #444 0 1px 1px;
+  background:transparent;
+}
+#primeiro,#segundo1,#segundo2,#terceiro1, #terceiro2,#terceiro3,#terceiro4,#terceiro5, #btn1, #btn2, #titleproj, #textproj, #image, #social {
+  opacity: 0;
+}
